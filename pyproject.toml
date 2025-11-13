@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "target-postgres-regression-test"
+version = "0.1.0"
+description = "target-postgres-regression-test"
+requires-python = ">=3.10"
+dependencies = [
+    "psycopg2-binary==2.9.11"
+]
+
+[tool.setuptools]
+packages = []  # No Python packages to build - this is just a notebooks project
